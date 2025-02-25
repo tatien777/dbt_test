@@ -1,0 +1,16 @@
+version: 2
+
+seeds:
+  - name: customers
+    config:
+      enabled: true
+      database: dbtTest
+      schema: raw
+      alias: customers
+      full_refresh: true
+      column_types:
+        StudentId: varchar(32)
+        FirstName: varchar(32)
+        LastName: varchar(32)
+        Age: int
+        City: varchar(32)
