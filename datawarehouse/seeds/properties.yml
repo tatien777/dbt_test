@@ -1,3 +1,4 @@
+# seeds/properties.yml
 version: 2
 
 seeds:
@@ -14,3 +15,22 @@ seeds:
         LastName: varchar(32)
         Age: int
         City: varchar(32)
+
+  - name: stationLocations
+    config:
+      enabled: true
+      database: dbtTest
+      schema: dim
+      alias: stationLocations
+      full_refresh: false
+      column_types:
+        locationid: varchar(6)
+        locationname: varchar(50)
+    columns:
+      - name: locationid
+        data_tests:
+          - unique
+          - not_null
+      - name: locationname
+        data_tests:
+          - not
