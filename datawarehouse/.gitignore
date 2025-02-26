@@ -1,5 +1,6 @@
 
-target/
+target/*
+!target/index.html
 dbt_packages/
 ./env/
 profiles.yml

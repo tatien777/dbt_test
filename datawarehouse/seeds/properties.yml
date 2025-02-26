@@ -33,4 +33,4 @@ seeds:
           - not_null
       - name: locationname
         data_tests:
-          - not
+          - not_null
