@@ -15,14 +15,19 @@ seeds:
         LastName: varchar(32)
         Age: int
         City: varchar(32)
-
+        Sex: int
+      columns:
+        - name: Sex
+          data_tests:
+            - accepted_values:
+                values: [0,1]
   - name: station_locations
     config:
       enabled: true
       database: dbtTest
-      schema: dbo
-      alias: dim_station_locations
-      full_refresh: false
+      schema: weather
+      alias: raw_station_locations
+      full_refresh: true
       column_types:
         locationid: varchar(6)
         locationname: varchar(50)
