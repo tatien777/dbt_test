@@ -16,12 +16,12 @@ seeds:
         Age: int
         City: varchar(32)
 
-  - name: stationLocations
+  - name: station_locations
     config:
       enabled: true
       database: dbtTest
-      schema: dim
-      alias: stationLocations
+      schema: dbo
+      alias: dim_station_locations
       full_refresh: false
       column_types:
         locationid: varchar(6)
