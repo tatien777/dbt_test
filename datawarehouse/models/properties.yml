@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: weather
+    schema: weather
+    description: "Weather data sources"
+    tables:
+      - name: raw_station_locations
+        description: "Seed data containing station location information"
+        identifier: raw_station_locations
