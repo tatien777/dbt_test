@@ -8,3 +8,11 @@ sources:
       - name: raw_station_locations
         description: "Seed data containing station location information"
         identifier: raw_station_locations
+  - name: dbo
+    schema: dbo
+    description: "Precipitation data records"
+    tables:
+      - name: RainFall
+        description: "Daily rainfall measurements"
+        identifier: RainFall
+        # Add columns section if needed
